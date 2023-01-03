@@ -1,7 +1,7 @@
 const dotenv=require('dotenv').config();
 const mongoose=require('mongoose');
 // var mongoURL='mongodb+srv://Hariprakash:Hariprakash20@cluster0.3wyvyo5.mongodb.net/?retryWrites=true&w=majority'
-var mongoURL=process.env.URL;
+var mongoURL='mongodb+srv://Hariprakash:Hariprakash20@cluster0.3wyvyo5.mongodb.net/pixel-chat'
 
 mongoose.connect(mongoURL,{useUnifiedTopology:true , useNewUrlParser:true});
 
