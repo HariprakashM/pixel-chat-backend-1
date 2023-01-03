@@ -9,7 +9,9 @@ const cors = require('cors');
 const userRoutes = require('./routes/userRoutes')
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    orgin: "*",
+}));
 
 const server = require('https').createServer(app);
 const PORT=process.env.PORT || 5000;
